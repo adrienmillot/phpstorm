@@ -9,4 +9,14 @@
             <option name="PHP" value="true"/>
         </context>
     </template>
+    <template name="remove"
+              value="public function remove$Item$($Class$ $$prm$Item$)&#10;{&#10;    if ($this-&gt;$attribute$-&gt;contains($$prm$Item$)) {&#10;        $this-&gt;$attribute$-&gt;removeElement($$prm$Item$);&#10;    }&#10;&#10;    return $this;&#10;}"
+              description="Remove from collection" toReformat="false" toShortenFQNames="true">
+        <variable name="Item" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="Class" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="attribute" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="PHP" value="true"/>
+        </context>
+    </template>
 </templateSet>
